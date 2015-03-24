@@ -1,0 +1,601 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2F92AA2D-2CE0-3292-8F53-D7391BCB74AD}</ProjectGuid>
+    <RootNamespace>canvas_variant</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <PlatformToolSet>v110</PlatformToolSet>
+    <OutputDirectory>debug\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>debug\</IntermediateDirectory>
+    <PrimaryOutput>canvas_variant</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <PlatformToolSet>v110</PlatformToolSet>
+    <OutputDirectory>debug\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>debug\</IntermediateDirectory>
+    <PrimaryOutput>canvas_variant</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <PlatformToolSet>v110</PlatformToolSet>
+    <OutputDirectory>release\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PrimaryOutput>canvas_variant</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <PlatformToolSet>v110</PlatformToolSet>
+    <OutputDirectory>release\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PrimaryOutput>canvas_variant</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">canvas_variant</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">canvas_variant</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</IgnoreImportLibrary>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</IgnoreImportLibrary>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">canvas_variant</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">canvas_variant</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</IgnoreImportLibrary>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>".";"..\..\src";"$(QTDIR)\include";"$(QTDIR)\include\QtWidgets";"$(QTDIR)\include\QtGui";"$(QTDIR)\include\QtANGLE";"$(QTDIR)\include\QtCore";"debug";$(QTDIR)\mkspecs\win32-msvc2012;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zm200 -w34100 -w34189 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>debug\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_DISABLE_DEPRECATED_BEFORE=0;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_OPENGL_ES_2;QT_OPENGL_ES_2_ANGLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>$(QTDIR)\lib\qtmaind.lib;shell32.lib;$(QTDIR)\lib\Qt5Widgetsd.lib;$(QTDIR)\lib\Qt5Guid.lib;$(QTDIR)\lib\Qt5Cored.lib;libEGLd.lib;libGLESv2d.lib;gdi32.lib;user32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\canvas_variant.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_DISABLE_DEPRECATED_BEFORE=0;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_OPENGL_ES_2;QT_OPENGL_ES_2_ANGLE;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>".";"..\..\src";"$(QTDIR)\include";"$(QTDIR)\include\QtWidgets";"$(QTDIR)\include\QtGui";"$(QTDIR)\include\QtANGLE";"$(QTDIR)\include\QtCore";"debug";$(QTDIR)\mkspecs\win32-msvc2012;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zm200 -w34100 -w34189 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>debug\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_DISABLE_DEPRECATED_BEFORE=0;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_OPENGL_ES_2;QT_OPENGL_ES_2_ANGLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>$(QTDIR)\lib\qtmaind.lib;shell32.lib;$(QTDIR)\lib\Qt5Widgetsd.lib;$(QTDIR)\lib\Qt5Guid.lib;$(QTDIR)\lib\Qt5Cored.lib;libEGLd.lib;libGLESv2d.lib;gdi32.lib;user32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\canvas_variant.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_DISABLE_DEPRECATED_BEFORE=0;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_OPENGL_ES_2;QT_OPENGL_ES_2_ANGLE;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>".";"..\..\src";"$(QTDIR)\include";"$(QTDIR)\include\QtWidgets";"$(QTDIR)\include\QtGui";"$(QTDIR)\include\QtANGLE";"$(QTDIR)\include\QtCore";"release";$(QTDIR)\mkspecs\win32-msvc2012;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zm200 -w34100 -w34189 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>release\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_DISABLE_DEPRECATED_BEFORE=0;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_OPENGL_ES_2;QT_OPENGL_ES_2_ANGLE;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>
+      </ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>$(QTDIR)\lib\qtmain.lib;shell32.lib;$(QTDIR)\lib\Qt5Widgets.lib;$(QTDIR)\lib\Qt5Gui.lib;$(QTDIR)\lib\Qt5Core.lib;libEGL.lib;libGLESv2.lib;gdi32.lib;user32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OutputFile>$(OutDir)\canvas_variant.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_DISABLE_DEPRECATED_BEFORE=0;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_OPENGL_ES_2;QT_OPENGL_ES_2_ANGLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>".";"..\..\src";"$(QTDIR)\include";"$(QTDIR)\include\QtWidgets";"$(QTDIR)\include\QtGui";"$(QTDIR)\include\QtANGLE";"$(QTDIR)\include\QtCore";"release";$(QTDIR)\mkspecs\win32-msvc2012;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zm200 -w34100 -w34189 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>release\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_DISABLE_DEPRECATED_BEFORE=0;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_OPENGL_ES_2;QT_OPENGL_ES_2_ANGLE;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>
+      </ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>$(QTDIR)\lib\qtmain.lib;shell32.lib;$(QTDIR)\lib\Qt5Widgets.lib;$(QTDIR)\lib\Qt5Gui.lib;$(QTDIR)\lib\Qt5Core.lib;libEGL.lib;libGLESv2.lib;gdi32.lib;user32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OutputFile>$(OutDir)\canvas_variant.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_DISABLE_DEPRECATED_BEFORE=0;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_OPENGL_ES_2;QT_OPENGL_ES_2_ANGLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="mainwindow.cpp" />
+    <ClCompile Include="..\..\src\qtbuttonpropertybrowser.cpp" />
+    <ClCompile Include="qtcanvas.cpp" />
+    <ClCompile Include="..\..\src\qteditorfactory.cpp" />
+    <ClCompile Include="..\..\src\qtgroupboxpropertybrowser.cpp" />
+    <ClCompile Include="..\..\src\qtpropertybrowser.cpp" />
+    <ClCompile Include="..\..\src\qtpropertybrowserutils.cpp" />
+    <ClCompile Include="..\..\src\qtpropertymanager.cpp" />
+    <ClCompile Include="..\..\src\qttreepropertybrowser.cpp" />
+    <ClCompile Include="..\..\src\qtvariantproperty.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="mainwindow.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mainwindow.h;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mainwindow.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DISABLE_DEPRECATED_BEFORE=0 -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -D_MSC_VER=1700 -D_WIN32 -ID:/qt_libs/qtbase/mkspecs/win32-msvc2012 -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/src" -ID:/QT_Libs/qtbase/include -ID:/QT_Libs/qtbase/include/QtWidgets -ID:/QT_Libs/qtbase/include/QtGui -ID:/QT_Libs/qtbase/include/QtANGLE -ID:/QT_Libs/qtbase/include/QtCore mainwindow.h -o debug\moc_mainwindow.cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DISABLE_DEPRECATED_BEFORE=0 -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -D_MSC_VER=1700 -D_WIN32 -ID:/qt_libs/qtbase/mkspecs/win32-msvc2012 -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/src" -ID:/QT_Libs/qtbase/include -ID:/QT_Libs/qtbase/include/QtWidgets -ID:/QT_Libs/qtbase/include/QtGui -ID:/QT_Libs/qtbase/include/QtANGLE -ID:/QT_Libs/qtbase/include/QtCore mainwindow.h -o debug\moc_mainwindow.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC mainwindow.h</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC mainwindow.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_mainwindow.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\moc_mainwindow.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mainwindow.h;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mainwindow.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DISABLE_DEPRECATED_BEFORE=0 -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -D_MSC_VER=1700 -D_WIN32 -ID:/qt_libs/qtbase/mkspecs/win32-msvc2012 -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/src" -ID:/QT_Libs/qtbase/include -ID:/QT_Libs/qtbase/include/QtWidgets -ID:/QT_Libs/qtbase/include/QtGui -ID:/QT_Libs/qtbase/include/QtANGLE -ID:/QT_Libs/qtbase/include/QtCore mainwindow.h -o release\moc_mainwindow.cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DISABLE_DEPRECATED_BEFORE=0 -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -D_MSC_VER=1700 -D_WIN32 -ID:/qt_libs/qtbase/mkspecs/win32-msvc2012 -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/src" -ID:/QT_Libs/qtbase/include -ID:/QT_Libs/qtbase/include/QtWidgets -ID:/QT_Libs/qtbase/include/QtGui -ID:/QT_Libs/qtbase/include/QtANGLE -ID:/QT_Libs/qtbase/include/QtCore mainwindow.h -o release\moc_mainwindow.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC mainwindow.h</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC mainwindow.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_mainwindow.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\moc_mainwindow.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\qtbuttonpropertybrowser.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\src\qtbuttonpropertybrowser.h;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\src\qtbuttonpropertybrowser.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DISABLE_DEPRECATED_BEFORE=0 -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -D_MSC_VER=1700 -D_WIN32 -ID:/qt_libs/qtbase/mkspecs/win32-msvc2012 -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/src" -ID:/QT_Libs/qtbase/include -ID:/QT_Libs/qtbase/include/QtWidgets -ID:/QT_Libs/qtbase/include/QtGui -ID:/QT_Libs/qtbase/include/QtANGLE -ID:/QT_Libs/qtbase/include/QtCore ..\..\src\qtbuttonpropertybrowser.h -o debug\moc_qtbuttonpropertybrowser.cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DISABLE_DEPRECATED_BEFORE=0 -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -D_MSC_VER=1700 -D_WIN32 -ID:/qt_libs/qtbase/mkspecs/win32-msvc2012 -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/src" -ID:/QT_Libs/qtbase/include -ID:/QT_Libs/qtbase/include/QtWidgets -ID:/QT_Libs/qtbase/include/QtGui -ID:/QT_Libs/qtbase/include/QtANGLE -ID:/QT_Libs/qtbase/include/QtCore ..\..\src\qtbuttonpropertybrowser.h -o debug\moc_qtbuttonpropertybrowser.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC ..\..\src\qtbuttonpropertybrowser.h</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC ..\..\src\qtbuttonpropertybrowser.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_qtbuttonpropertybrowser.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\moc_qtbuttonpropertybrowser.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\src\qtbuttonpropertybrowser.h;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\src\qtbuttonpropertybrowser.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DISABLE_DEPRECATED_BEFORE=0 -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -D_MSC_VER=1700 -D_WIN32 -ID:/qt_libs/qtbase/mkspecs/win32-msvc2012 -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/src" -ID:/QT_Libs/qtbase/include -ID:/QT_Libs/qtbase/include/QtWidgets -ID:/QT_Libs/qtbase/include/QtGui -ID:/QT_Libs/qtbase/include/QtANGLE -ID:/QT_Libs/qtbase/include/QtCore ..\..\src\qtbuttonpropertybrowser.h -o release\moc_qtbuttonpropertybrowser.cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DISABLE_DEPRECATED_BEFORE=0 -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -D_MSC_VER=1700 -D_WIN32 -ID:/qt_libs/qtbase/mkspecs/win32-msvc2012 -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/src" -ID:/QT_Libs/qtbase/include -ID:/QT_Libs/qtbase/include/QtWidgets -ID:/QT_Libs/qtbase/include/QtGui -ID:/QT_Libs/qtbase/include/QtANGLE -ID:/QT_Libs/qtbase/include/QtCore ..\..\src\qtbuttonpropertybrowser.h -o release\moc_qtbuttonpropertybrowser.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC ..\..\src\qtbuttonpropertybrowser.h</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC ..\..\src\qtbuttonpropertybrowser.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_qtbuttonpropertybrowser.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\moc_qtbuttonpropertybrowser.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="qtcanvas.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">qtcanvas.h;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qtcanvas.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DISABLE_DEPRECATED_BEFORE=0 -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -D_MSC_VER=1700 -D_WIN32 -ID:/qt_libs/qtbase/mkspecs/win32-msvc2012 -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/src" -ID:/QT_Libs/qtbase/include -ID:/QT_Libs/qtbase/include/QtWidgets -ID:/QT_Libs/qtbase/include/QtGui -ID:/QT_Libs/qtbase/include/QtANGLE -ID:/QT_Libs/qtbase/include/QtCore qtcanvas.h -o debug\moc_qtcanvas.cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DISABLE_DEPRECATED_BEFORE=0 -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -D_MSC_VER=1700 -D_WIN32 -ID:/qt_libs/qtbase/mkspecs/win32-msvc2012 -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/src" -ID:/QT_Libs/qtbase/include -ID:/QT_Libs/qtbase/include/QtWidgets -ID:/QT_Libs/qtbase/include/QtGui -ID:/QT_Libs/qtbase/include/QtANGLE -ID:/QT_Libs/qtbase/include/QtCore qtcanvas.h -o debug\moc_qtcanvas.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC qtcanvas.h</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC qtcanvas.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_qtcanvas.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\moc_qtcanvas.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">qtcanvas.h;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qtcanvas.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DISABLE_DEPRECATED_BEFORE=0 -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -D_MSC_VER=1700 -D_WIN32 -ID:/qt_libs/qtbase/mkspecs/win32-msvc2012 -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/src" -ID:/QT_Libs/qtbase/include -ID:/QT_Libs/qtbase/include/QtWidgets -ID:/QT_Libs/qtbase/include/QtGui -ID:/QT_Libs/qtbase/include/QtANGLE -ID:/QT_Libs/qtbase/include/QtCore qtcanvas.h -o release\moc_qtcanvas.cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DISABLE_DEPRECATED_BEFORE=0 -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -D_MSC_VER=1700 -D_WIN32 -ID:/qt_libs/qtbase/mkspecs/win32-msvc2012 -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/src" -ID:/QT_Libs/qtbase/include -ID:/QT_Libs/qtbase/include/QtWidgets -ID:/QT_Libs/qtbase/include/QtGui -ID:/QT_Libs/qtbase/include/QtANGLE -ID:/QT_Libs/qtbase/include/QtCore qtcanvas.h -o release\moc_qtcanvas.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC qtcanvas.h</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC qtcanvas.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_qtcanvas.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\moc_qtcanvas.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\qteditorfactory.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\src\qteditorfactory.h;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\src\qteditorfactory.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DISABLE_DEPRECATED_BEFORE=0 -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -D_MSC_VER=1700 -D_WIN32 -ID:/qt_libs/qtbase/mkspecs/win32-msvc2012 -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/src" -ID:/QT_Libs/qtbase/include -ID:/QT_Libs/qtbase/include/QtWidgets -ID:/QT_Libs/qtbase/include/QtGui -ID:/QT_Libs/qtbase/include/QtANGLE -ID:/QT_Libs/qtbase/include/QtCore ..\..\src\qteditorfactory.h -o debug\moc_qteditorfactory.cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DISABLE_DEPRECATED_BEFORE=0 -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -D_MSC_VER=1700 -D_WIN32 -ID:/qt_libs/qtbase/mkspecs/win32-msvc2012 -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/src" -ID:/QT_Libs/qtbase/include -ID:/QT_Libs/qtbase/include/QtWidgets -ID:/QT_Libs/qtbase/include/QtGui -ID:/QT_Libs/qtbase/include/QtANGLE -ID:/QT_Libs/qtbase/include/QtCore ..\..\src\qteditorfactory.h -o debug\moc_qteditorfactory.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC ..\..\src\qteditorfactory.h</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC ..\..\src\qteditorfactory.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_qteditorfactory.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\moc_qteditorfactory.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\src\qteditorfactory.h;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\src\qteditorfactory.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DISABLE_DEPRECATED_BEFORE=0 -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -D_MSC_VER=1700 -D_WIN32 -ID:/qt_libs/qtbase/mkspecs/win32-msvc2012 -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/src" -ID:/QT_Libs/qtbase/include -ID:/QT_Libs/qtbase/include/QtWidgets -ID:/QT_Libs/qtbase/include/QtGui -ID:/QT_Libs/qtbase/include/QtANGLE -ID:/QT_Libs/qtbase/include/QtCore ..\..\src\qteditorfactory.h -o release\moc_qteditorfactory.cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DISABLE_DEPRECATED_BEFORE=0 -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -D_MSC_VER=1700 -D_WIN32 -ID:/qt_libs/qtbase/mkspecs/win32-msvc2012 -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/src" -ID:/QT_Libs/qtbase/include -ID:/QT_Libs/qtbase/include/QtWidgets -ID:/QT_Libs/qtbase/include/QtGui -ID:/QT_Libs/qtbase/include/QtANGLE -ID:/QT_Libs/qtbase/include/QtCore ..\..\src\qteditorfactory.h -o release\moc_qteditorfactory.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC ..\..\src\qteditorfactory.h</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC ..\..\src\qteditorfactory.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_qteditorfactory.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\moc_qteditorfactory.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\qtgroupboxpropertybrowser.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\src\qtgroupboxpropertybrowser.h;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\src\qtgroupboxpropertybrowser.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DISABLE_DEPRECATED_BEFORE=0 -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -D_MSC_VER=1700 -D_WIN32 -ID:/qt_libs/qtbase/mkspecs/win32-msvc2012 -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/src" -ID:/QT_Libs/qtbase/include -ID:/QT_Libs/qtbase/include/QtWidgets -ID:/QT_Libs/qtbase/include/QtGui -ID:/QT_Libs/qtbase/include/QtANGLE -ID:/QT_Libs/qtbase/include/QtCore ..\..\src\qtgroupboxpropertybrowser.h -o debug\moc_qtgroupboxpropertybrowser.cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DISABLE_DEPRECATED_BEFORE=0 -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -D_MSC_VER=1700 -D_WIN32 -ID:/qt_libs/qtbase/mkspecs/win32-msvc2012 -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/src" -ID:/QT_Libs/qtbase/include -ID:/QT_Libs/qtbase/include/QtWidgets -ID:/QT_Libs/qtbase/include/QtGui -ID:/QT_Libs/qtbase/include/QtANGLE -ID:/QT_Libs/qtbase/include/QtCore ..\..\src\qtgroupboxpropertybrowser.h -o debug\moc_qtgroupboxpropertybrowser.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC ..\..\src\qtgroupboxpropertybrowser.h</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC ..\..\src\qtgroupboxpropertybrowser.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_qtgroupboxpropertybrowser.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\moc_qtgroupboxpropertybrowser.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\src\qtgroupboxpropertybrowser.h;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\src\qtgroupboxpropertybrowser.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DISABLE_DEPRECATED_BEFORE=0 -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -D_MSC_VER=1700 -D_WIN32 -ID:/qt_libs/qtbase/mkspecs/win32-msvc2012 -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/src" -ID:/QT_Libs/qtbase/include -ID:/QT_Libs/qtbase/include/QtWidgets -ID:/QT_Libs/qtbase/include/QtGui -ID:/QT_Libs/qtbase/include/QtANGLE -ID:/QT_Libs/qtbase/include/QtCore ..\..\src\qtgroupboxpropertybrowser.h -o release\moc_qtgroupboxpropertybrowser.cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DISABLE_DEPRECATED_BEFORE=0 -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -D_MSC_VER=1700 -D_WIN32 -ID:/qt_libs/qtbase/mkspecs/win32-msvc2012 -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/src" -ID:/QT_Libs/qtbase/include -ID:/QT_Libs/qtbase/include/QtWidgets -ID:/QT_Libs/qtbase/include/QtGui -ID:/QT_Libs/qtbase/include/QtANGLE -ID:/QT_Libs/qtbase/include/QtCore ..\..\src\qtgroupboxpropertybrowser.h -o release\moc_qtgroupboxpropertybrowser.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC ..\..\src\qtgroupboxpropertybrowser.h</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC ..\..\src\qtgroupboxpropertybrowser.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_qtgroupboxpropertybrowser.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\moc_qtgroupboxpropertybrowser.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\qtpropertybrowser.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\src\qtpropertybrowser.h;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\src\qtpropertybrowser.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DISABLE_DEPRECATED_BEFORE=0 -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -D_MSC_VER=1700 -D_WIN32 -ID:/qt_libs/qtbase/mkspecs/win32-msvc2012 -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/src" -ID:/QT_Libs/qtbase/include -ID:/QT_Libs/qtbase/include/QtWidgets -ID:/QT_Libs/qtbase/include/QtGui -ID:/QT_Libs/qtbase/include/QtANGLE -ID:/QT_Libs/qtbase/include/QtCore ..\..\src\qtpropertybrowser.h -o debug\moc_qtpropertybrowser.cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DISABLE_DEPRECATED_BEFORE=0 -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -D_MSC_VER=1700 -D_WIN32 -ID:/qt_libs/qtbase/mkspecs/win32-msvc2012 -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/src" -ID:/QT_Libs/qtbase/include -ID:/QT_Libs/qtbase/include/QtWidgets -ID:/QT_Libs/qtbase/include/QtGui -ID:/QT_Libs/qtbase/include/QtANGLE -ID:/QT_Libs/qtbase/include/QtCore ..\..\src\qtpropertybrowser.h -o debug\moc_qtpropertybrowser.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC ..\..\src\qtpropertybrowser.h</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC ..\..\src\qtpropertybrowser.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_qtpropertybrowser.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\moc_qtpropertybrowser.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\src\qtpropertybrowser.h;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\src\qtpropertybrowser.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DISABLE_DEPRECATED_BEFORE=0 -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -D_MSC_VER=1700 -D_WIN32 -ID:/qt_libs/qtbase/mkspecs/win32-msvc2012 -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/src" -ID:/QT_Libs/qtbase/include -ID:/QT_Libs/qtbase/include/QtWidgets -ID:/QT_Libs/qtbase/include/QtGui -ID:/QT_Libs/qtbase/include/QtANGLE -ID:/QT_Libs/qtbase/include/QtCore ..\..\src\qtpropertybrowser.h -o release\moc_qtpropertybrowser.cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DISABLE_DEPRECATED_BEFORE=0 -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -D_MSC_VER=1700 -D_WIN32 -ID:/qt_libs/qtbase/mkspecs/win32-msvc2012 -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/src" -ID:/QT_Libs/qtbase/include -ID:/QT_Libs/qtbase/include/QtWidgets -ID:/QT_Libs/qtbase/include/QtGui -ID:/QT_Libs/qtbase/include/QtANGLE -ID:/QT_Libs/qtbase/include/QtCore ..\..\src\qtpropertybrowser.h -o release\moc_qtpropertybrowser.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC ..\..\src\qtpropertybrowser.h</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC ..\..\src\qtpropertybrowser.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_qtpropertybrowser.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\moc_qtpropertybrowser.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\qtpropertybrowserutils_p.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\src\qtpropertybrowserutils_p.h;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\src\qtpropertybrowserutils_p.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DISABLE_DEPRECATED_BEFORE=0 -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -D_MSC_VER=1700 -D_WIN32 -ID:/qt_libs/qtbase/mkspecs/win32-msvc2012 -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/src" -ID:/QT_Libs/qtbase/include -ID:/QT_Libs/qtbase/include/QtWidgets -ID:/QT_Libs/qtbase/include/QtGui -ID:/QT_Libs/qtbase/include/QtANGLE -ID:/QT_Libs/qtbase/include/QtCore ..\..\src\qtpropertybrowserutils_p.h -o debug\moc_qtpropertybrowserutils_p.cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DISABLE_DEPRECATED_BEFORE=0 -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -D_MSC_VER=1700 -D_WIN32 -ID:/qt_libs/qtbase/mkspecs/win32-msvc2012 -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/src" -ID:/QT_Libs/qtbase/include -ID:/QT_Libs/qtbase/include/QtWidgets -ID:/QT_Libs/qtbase/include/QtGui -ID:/QT_Libs/qtbase/include/QtANGLE -ID:/QT_Libs/qtbase/include/QtCore ..\..\src\qtpropertybrowserutils_p.h -o debug\moc_qtpropertybrowserutils_p.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC ..\..\src\qtpropertybrowserutils_p.h</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC ..\..\src\qtpropertybrowserutils_p.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_qtpropertybrowserutils_p.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\moc_qtpropertybrowserutils_p.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\src\qtpropertybrowserutils_p.h;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\src\qtpropertybrowserutils_p.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DISABLE_DEPRECATED_BEFORE=0 -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -D_MSC_VER=1700 -D_WIN32 -ID:/qt_libs/qtbase/mkspecs/win32-msvc2012 -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/src" -ID:/QT_Libs/qtbase/include -ID:/QT_Libs/qtbase/include/QtWidgets -ID:/QT_Libs/qtbase/include/QtGui -ID:/QT_Libs/qtbase/include/QtANGLE -ID:/QT_Libs/qtbase/include/QtCore ..\..\src\qtpropertybrowserutils_p.h -o release\moc_qtpropertybrowserutils_p.cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DISABLE_DEPRECATED_BEFORE=0 -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -D_MSC_VER=1700 -D_WIN32 -ID:/qt_libs/qtbase/mkspecs/win32-msvc2012 -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/src" -ID:/QT_Libs/qtbase/include -ID:/QT_Libs/qtbase/include/QtWidgets -ID:/QT_Libs/qtbase/include/QtGui -ID:/QT_Libs/qtbase/include/QtANGLE -ID:/QT_Libs/qtbase/include/QtCore ..\..\src\qtpropertybrowserutils_p.h -o release\moc_qtpropertybrowserutils_p.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC ..\..\src\qtpropertybrowserutils_p.h</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC ..\..\src\qtpropertybrowserutils_p.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_qtpropertybrowserutils_p.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\moc_qtpropertybrowserutils_p.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\qtpropertymanager.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\src\qtpropertymanager.h;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\src\qtpropertymanager.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DISABLE_DEPRECATED_BEFORE=0 -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -D_MSC_VER=1700 -D_WIN32 -ID:/qt_libs/qtbase/mkspecs/win32-msvc2012 -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/src" -ID:/QT_Libs/qtbase/include -ID:/QT_Libs/qtbase/include/QtWidgets -ID:/QT_Libs/qtbase/include/QtGui -ID:/QT_Libs/qtbase/include/QtANGLE -ID:/QT_Libs/qtbase/include/QtCore ..\..\src\qtpropertymanager.h -o debug\moc_qtpropertymanager.cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DISABLE_DEPRECATED_BEFORE=0 -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -D_MSC_VER=1700 -D_WIN32 -ID:/qt_libs/qtbase/mkspecs/win32-msvc2012 -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/src" -ID:/QT_Libs/qtbase/include -ID:/QT_Libs/qtbase/include/QtWidgets -ID:/QT_Libs/qtbase/include/QtGui -ID:/QT_Libs/qtbase/include/QtANGLE -ID:/QT_Libs/qtbase/include/QtCore ..\..\src\qtpropertymanager.h -o debug\moc_qtpropertymanager.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC ..\..\src\qtpropertymanager.h</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC ..\..\src\qtpropertymanager.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_qtpropertymanager.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\moc_qtpropertymanager.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\src\qtpropertymanager.h;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\src\qtpropertymanager.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DISABLE_DEPRECATED_BEFORE=0 -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -D_MSC_VER=1700 -D_WIN32 -ID:/qt_libs/qtbase/mkspecs/win32-msvc2012 -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/src" -ID:/QT_Libs/qtbase/include -ID:/QT_Libs/qtbase/include/QtWidgets -ID:/QT_Libs/qtbase/include/QtGui -ID:/QT_Libs/qtbase/include/QtANGLE -ID:/QT_Libs/qtbase/include/QtCore ..\..\src\qtpropertymanager.h -o release\moc_qtpropertymanager.cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DISABLE_DEPRECATED_BEFORE=0 -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -D_MSC_VER=1700 -D_WIN32 -ID:/qt_libs/qtbase/mkspecs/win32-msvc2012 -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/src" -ID:/QT_Libs/qtbase/include -ID:/QT_Libs/qtbase/include/QtWidgets -ID:/QT_Libs/qtbase/include/QtGui -ID:/QT_Libs/qtbase/include/QtANGLE -ID:/QT_Libs/qtbase/include/QtCore ..\..\src\qtpropertymanager.h -o release\moc_qtpropertymanager.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC ..\..\src\qtpropertymanager.h</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC ..\..\src\qtpropertymanager.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_qtpropertymanager.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\moc_qtpropertymanager.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\qttreepropertybrowser.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\src\qttreepropertybrowser.h;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\src\qttreepropertybrowser.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DISABLE_DEPRECATED_BEFORE=0 -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -D_MSC_VER=1700 -D_WIN32 -ID:/qt_libs/qtbase/mkspecs/win32-msvc2012 -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/src" -ID:/QT_Libs/qtbase/include -ID:/QT_Libs/qtbase/include/QtWidgets -ID:/QT_Libs/qtbase/include/QtGui -ID:/QT_Libs/qtbase/include/QtANGLE -ID:/QT_Libs/qtbase/include/QtCore ..\..\src\qttreepropertybrowser.h -o debug\moc_qttreepropertybrowser.cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DISABLE_DEPRECATED_BEFORE=0 -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -D_MSC_VER=1700 -D_WIN32 -ID:/qt_libs/qtbase/mkspecs/win32-msvc2012 -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/src" -ID:/QT_Libs/qtbase/include -ID:/QT_Libs/qtbase/include/QtWidgets -ID:/QT_Libs/qtbase/include/QtGui -ID:/QT_Libs/qtbase/include/QtANGLE -ID:/QT_Libs/qtbase/include/QtCore ..\..\src\qttreepropertybrowser.h -o debug\moc_qttreepropertybrowser.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC ..\..\src\qttreepropertybrowser.h</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC ..\..\src\qttreepropertybrowser.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_qttreepropertybrowser.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\moc_qttreepropertybrowser.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\src\qttreepropertybrowser.h;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\src\qttreepropertybrowser.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DISABLE_DEPRECATED_BEFORE=0 -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -D_MSC_VER=1700 -D_WIN32 -ID:/qt_libs/qtbase/mkspecs/win32-msvc2012 -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/src" -ID:/QT_Libs/qtbase/include -ID:/QT_Libs/qtbase/include/QtWidgets -ID:/QT_Libs/qtbase/include/QtGui -ID:/QT_Libs/qtbase/include/QtANGLE -ID:/QT_Libs/qtbase/include/QtCore ..\..\src\qttreepropertybrowser.h -o release\moc_qttreepropertybrowser.cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DISABLE_DEPRECATED_BEFORE=0 -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -D_MSC_VER=1700 -D_WIN32 -ID:/qt_libs/qtbase/mkspecs/win32-msvc2012 -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/src" -ID:/QT_Libs/qtbase/include -ID:/QT_Libs/qtbase/include/QtWidgets -ID:/QT_Libs/qtbase/include/QtGui -ID:/QT_Libs/qtbase/include/QtANGLE -ID:/QT_Libs/qtbase/include/QtCore ..\..\src\qttreepropertybrowser.h -o release\moc_qttreepropertybrowser.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC ..\..\src\qttreepropertybrowser.h</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC ..\..\src\qttreepropertybrowser.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_qttreepropertybrowser.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\moc_qttreepropertybrowser.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\qtvariantproperty.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\src\qtvariantproperty.h;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\src\qtvariantproperty.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DISABLE_DEPRECATED_BEFORE=0 -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -D_MSC_VER=1700 -D_WIN32 -ID:/qt_libs/qtbase/mkspecs/win32-msvc2012 -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/src" -ID:/QT_Libs/qtbase/include -ID:/QT_Libs/qtbase/include/QtWidgets -ID:/QT_Libs/qtbase/include/QtGui -ID:/QT_Libs/qtbase/include/QtANGLE -ID:/QT_Libs/qtbase/include/QtCore ..\..\src\qtvariantproperty.h -o debug\moc_qtvariantproperty.cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DISABLE_DEPRECATED_BEFORE=0 -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -D_MSC_VER=1700 -D_WIN32 -ID:/qt_libs/qtbase/mkspecs/win32-msvc2012 -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/src" -ID:/QT_Libs/qtbase/include -ID:/QT_Libs/qtbase/include/QtWidgets -ID:/QT_Libs/qtbase/include/QtGui -ID:/QT_Libs/qtbase/include/QtANGLE -ID:/QT_Libs/qtbase/include/QtCore ..\..\src\qtvariantproperty.h -o debug\moc_qtvariantproperty.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC ..\..\src\qtvariantproperty.h</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC ..\..\src\qtvariantproperty.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_qtvariantproperty.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\moc_qtvariantproperty.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\src\qtvariantproperty.h;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\src\qtvariantproperty.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DISABLE_DEPRECATED_BEFORE=0 -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -D_MSC_VER=1700 -D_WIN32 -ID:/qt_libs/qtbase/mkspecs/win32-msvc2012 -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/src" -ID:/QT_Libs/qtbase/include -ID:/QT_Libs/qtbase/include/QtWidgets -ID:/QT_Libs/qtbase/include/QtGui -ID:/QT_Libs/qtbase/include/QtANGLE -ID:/QT_Libs/qtbase/include/QtCore ..\..\src\qtvariantproperty.h -o release\moc_qtvariantproperty.cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DISABLE_DEPRECATED_BEFORE=0 -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -D_MSC_VER=1700 -D_WIN32 -ID:/qt_libs/qtbase/mkspecs/win32-msvc2012 -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/src" -ID:/QT_Libs/qtbase/include -ID:/QT_Libs/qtbase/include/QtWidgets -ID:/QT_Libs/qtbase/include/QtGui -ID:/QT_Libs/qtbase/include/QtANGLE -ID:/QT_Libs/qtbase/include/QtCore ..\..\src\qtvariantproperty.h -o release\moc_qtvariantproperty.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC ..\..\src\qtvariantproperty.h</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC ..\..\src\qtvariantproperty.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_qtvariantproperty.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\moc_qtvariantproperty.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="debug\moc_mainwindow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_mainwindow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_qtcanvas.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_qtcanvas.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_qtpropertybrowserutils_p.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_qtpropertybrowserutils_p.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\qrc_qtpropertybrowser.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\qrc_qtpropertybrowser.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <CustomBuild Include="debug\qteditorfactory.moc">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\src\qteditorfactory.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\src\qteditorfactory.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DISABLE_DEPRECATED_BEFORE=0 -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -D_MSC_VER=1700 -D_WIN32 -ID:/qt_libs/qtbase/mkspecs/win32-msvc2012 -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/src" -ID:/QT_Libs/qtbase/include -ID:/QT_Libs/qtbase/include/QtWidgets -ID:/QT_Libs/qtbase/include/QtGui -ID:/QT_Libs/qtbase/include/QtANGLE -ID:/QT_Libs/qtbase/include/QtCore ..\..\src\qteditorfactory.cpp -o debug\qteditorfactory.moc</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DISABLE_DEPRECATED_BEFORE=0 -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -D_MSC_VER=1700 -D_WIN32 -ID:/qt_libs/qtbase/mkspecs/win32-msvc2012 -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/src" -ID:/QT_Libs/qtbase/include -ID:/QT_Libs/qtbase/include/QtWidgets -ID:/QT_Libs/qtbase/include/QtGui -ID:/QT_Libs/qtbase/include/QtANGLE -ID:/QT_Libs/qtbase/include/QtCore ..\..\src\qteditorfactory.cpp -o debug\qteditorfactory.moc</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC ..\..\src\qteditorfactory.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC ..\..\src\qteditorfactory.cpp</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\qteditorfactory.moc;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\qteditorfactory.moc;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="release\qteditorfactory.moc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\src\qteditorfactory.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\src\qteditorfactory.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DISABLE_DEPRECATED_BEFORE=0 -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -D_MSC_VER=1700 -D_WIN32 -ID:/qt_libs/qtbase/mkspecs/win32-msvc2012 -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/src" -ID:/QT_Libs/qtbase/include -ID:/QT_Libs/qtbase/include/QtWidgets -ID:/QT_Libs/qtbase/include/QtGui -ID:/QT_Libs/qtbase/include/QtANGLE -ID:/QT_Libs/qtbase/include/QtCore ..\..\src\qteditorfactory.cpp -o release\qteditorfactory.moc</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DISABLE_DEPRECATED_BEFORE=0 -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -D_MSC_VER=1700 -D_WIN32 -ID:/qt_libs/qtbase/mkspecs/win32-msvc2012 -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/src" -ID:/QT_Libs/qtbase/include -ID:/QT_Libs/qtbase/include/QtWidgets -ID:/QT_Libs/qtbase/include/QtGui -ID:/QT_Libs/qtbase/include/QtANGLE -ID:/QT_Libs/qtbase/include/QtCore ..\..\src\qteditorfactory.cpp -o release\qteditorfactory.moc</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC ..\..\src\qteditorfactory.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC ..\..\src\qteditorfactory.cpp</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\qteditorfactory.moc;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\qteditorfactory.moc;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="debug\qtpropertymanager.moc">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\src\qtpropertymanager.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\src\qtpropertymanager.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DISABLE_DEPRECATED_BEFORE=0 -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -D_MSC_VER=1700 -D_WIN32 -ID:/qt_libs/qtbase/mkspecs/win32-msvc2012 -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/src" -ID:/QT_Libs/qtbase/include -ID:/QT_Libs/qtbase/include/QtWidgets -ID:/QT_Libs/qtbase/include/QtGui -ID:/QT_Libs/qtbase/include/QtANGLE -ID:/QT_Libs/qtbase/include/QtCore ..\..\src\qtpropertymanager.cpp -o debug\qtpropertymanager.moc</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DISABLE_DEPRECATED_BEFORE=0 -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -D_MSC_VER=1700 -D_WIN32 -ID:/qt_libs/qtbase/mkspecs/win32-msvc2012 -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/src" -ID:/QT_Libs/qtbase/include -ID:/QT_Libs/qtbase/include/QtWidgets -ID:/QT_Libs/qtbase/include/QtGui -ID:/QT_Libs/qtbase/include/QtANGLE -ID:/QT_Libs/qtbase/include/QtCore ..\..\src\qtpropertymanager.cpp -o debug\qtpropertymanager.moc</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC ..\..\src\qtpropertymanager.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC ..\..\src\qtpropertymanager.cpp</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\qtpropertymanager.moc;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\qtpropertymanager.moc;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="release\qtpropertymanager.moc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\src\qtpropertymanager.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\src\qtpropertymanager.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DISABLE_DEPRECATED_BEFORE=0 -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -D_MSC_VER=1700 -D_WIN32 -ID:/qt_libs/qtbase/mkspecs/win32-msvc2012 -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/src" -ID:/QT_Libs/qtbase/include -ID:/QT_Libs/qtbase/include/QtWidgets -ID:/QT_Libs/qtbase/include/QtGui -ID:/QT_Libs/qtbase/include/QtANGLE -ID:/QT_Libs/qtbase/include/QtCore ..\..\src\qtpropertymanager.cpp -o release\qtpropertymanager.moc</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DISABLE_DEPRECATED_BEFORE=0 -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -D_MSC_VER=1700 -D_WIN32 -ID:/qt_libs/qtbase/mkspecs/win32-msvc2012 -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/src" -ID:/QT_Libs/qtbase/include -ID:/QT_Libs/qtbase/include/QtWidgets -ID:/QT_Libs/qtbase/include/QtGui -ID:/QT_Libs/qtbase/include/QtANGLE -ID:/QT_Libs/qtbase/include/QtCore ..\..\src\qtpropertymanager.cpp -o release\qtpropertymanager.moc</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC ..\..\src\qtpropertymanager.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC ..\..\src\qtpropertymanager.cpp</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\qtpropertymanager.moc;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\qtpropertymanager.moc;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="debug\qttreepropertybrowser.moc">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\src\qttreepropertybrowser.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\src\qttreepropertybrowser.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DISABLE_DEPRECATED_BEFORE=0 -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -D_MSC_VER=1700 -D_WIN32 -ID:/qt_libs/qtbase/mkspecs/win32-msvc2012 -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/src" -ID:/QT_Libs/qtbase/include -ID:/QT_Libs/qtbase/include/QtWidgets -ID:/QT_Libs/qtbase/include/QtGui -ID:/QT_Libs/qtbase/include/QtANGLE -ID:/QT_Libs/qtbase/include/QtCore ..\..\src\qttreepropertybrowser.cpp -o debug\qttreepropertybrowser.moc</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DISABLE_DEPRECATED_BEFORE=0 -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -D_MSC_VER=1700 -D_WIN32 -ID:/qt_libs/qtbase/mkspecs/win32-msvc2012 -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/src" -ID:/QT_Libs/qtbase/include -ID:/QT_Libs/qtbase/include/QtWidgets -ID:/QT_Libs/qtbase/include/QtGui -ID:/QT_Libs/qtbase/include/QtANGLE -ID:/QT_Libs/qtbase/include/QtCore ..\..\src\qttreepropertybrowser.cpp -o debug\qttreepropertybrowser.moc</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC ..\..\src\qttreepropertybrowser.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC ..\..\src\qttreepropertybrowser.cpp</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\qttreepropertybrowser.moc;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\qttreepropertybrowser.moc;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="release\qttreepropertybrowser.moc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\src\qttreepropertybrowser.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\src\qttreepropertybrowser.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DISABLE_DEPRECATED_BEFORE=0 -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -D_MSC_VER=1700 -D_WIN32 -ID:/qt_libs/qtbase/mkspecs/win32-msvc2012 -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/src" -ID:/QT_Libs/qtbase/include -ID:/QT_Libs/qtbase/include/QtWidgets -ID:/QT_Libs/qtbase/include/QtGui -ID:/QT_Libs/qtbase/include/QtANGLE -ID:/QT_Libs/qtbase/include/QtCore ..\..\src\qttreepropertybrowser.cpp -o release\qttreepropertybrowser.moc</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DISABLE_DEPRECATED_BEFORE=0 -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -D_MSC_VER=1700 -D_WIN32 -ID:/qt_libs/qtbase/mkspecs/win32-msvc2012 -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant" -I"E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/src" -ID:/QT_Libs/qtbase/include -ID:/QT_Libs/qtbase/include/QtWidgets -ID:/QT_Libs/qtbase/include/QtGui -ID:/QT_Libs/qtbase/include/QtANGLE -ID:/QT_Libs/qtbase/include/QtCore ..\..\src\qttreepropertybrowser.cpp -o release\qttreepropertybrowser.moc</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC ..\..\src\qttreepropertybrowser.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC ..\..\src\qttreepropertybrowser.cpp</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\qttreepropertybrowser.moc;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\qttreepropertybrowser.moc;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\src\images\cursor-arrow.png" />
+    <None Include="..\..\src\images\cursor-busy.png" />
+    <None Include="..\..\src\images\cursor-closedhand.png" />
+    <None Include="..\..\src\images\cursor-cross.png" />
+    <None Include="..\..\src\images\cursor-forbidden.png" />
+    <None Include="..\..\src\images\cursor-hand.png" />
+    <None Include="..\..\src\images\cursor-hsplit.png" />
+    <None Include="..\..\src\images\cursor-ibeam.png" />
+    <None Include="..\..\src\images\cursor-openhand.png" />
+    <None Include="..\..\src\images\cursor-sizeall.png" />
+    <None Include="..\..\src\images\cursor-sizeb.png" />
+    <None Include="..\..\src\images\cursor-sizef.png" />
+    <None Include="..\..\src\images\cursor-sizeh.png" />
+    <None Include="..\..\src\images\cursor-sizev.png" />
+    <None Include="..\..\src\images\cursor-uparrow.png" />
+    <None Include="..\..\src\images\cursor-vsplit.png" />
+    <None Include="..\..\src\images\cursor-wait.png" />
+    <None Include="..\..\src\images\cursor-whatsthis.png" />
+    <CustomBuild Include="..\..\src\qtpropertybrowser.qrc">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\src\qtpropertybrowser.qrc;..\..\src\images\cursor-sizeb.png;..\..\src\images\cursor-sizeall.png;..\..\src\images\cursor-ibeam.png;..\..\src\images\cursor-sizef.png;..\..\src\images\cursor-closedhand.png;..\..\src\images\cursor-busy.png;..\..\src\images\cursor-cross.png;..\..\src\images\cursor-sizeh.png;..\..\src\images\cursor-forbidden.png;..\..\src\images\cursor-hand.png;..\..\src\images\cursor-uparrow.png;..\..\src\images\cursor-openhand.png;..\..\src\images\cursor-vsplit.png;..\..\src\images\cursor-sizev.png;..\..\src\images\cursor-hsplit.png;..\..\src\images\cursor-arrow.png;..\..\src\images\cursor-wait.png;..\..\src\images\cursor-whatsthis.png;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\src\qtpropertybrowser.qrc;..\..\src\images\cursor-sizeb.png;..\..\src\images\cursor-sizeall.png;..\..\src\images\cursor-ibeam.png;..\..\src\images\cursor-sizef.png;..\..\src\images\cursor-closedhand.png;..\..\src\images\cursor-busy.png;..\..\src\images\cursor-cross.png;..\..\src\images\cursor-sizeh.png;..\..\src\images\cursor-forbidden.png;..\..\src\images\cursor-hand.png;..\..\src\images\cursor-uparrow.png;..\..\src\images\cursor-openhand.png;..\..\src\images\cursor-vsplit.png;..\..\src\images\cursor-sizev.png;..\..\src\images\cursor-hsplit.png;..\..\src\images\cursor-arrow.png;..\..\src\images\cursor-wait.png;..\..\src\images\cursor-whatsthis.png;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\rcc.exe -name qtpropertybrowser ..\..\src\qtpropertybrowser.qrc -o debug\qrc_qtpropertybrowser.cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\rcc.exe -name qtpropertybrowser ..\..\src\qtpropertybrowser.qrc -o debug\qrc_qtpropertybrowser.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">RCC ..\..\src\qtpropertybrowser.qrc</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">RCC ..\..\src\qtpropertybrowser.qrc</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\qrc_qtpropertybrowser.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\qrc_qtpropertybrowser.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\src\qtpropertybrowser.qrc;..\..\src\images\cursor-sizeb.png;..\..\src\images\cursor-sizeall.png;..\..\src\images\cursor-ibeam.png;..\..\src\images\cursor-sizef.png;..\..\src\images\cursor-closedhand.png;..\..\src\images\cursor-busy.png;..\..\src\images\cursor-cross.png;..\..\src\images\cursor-sizeh.png;..\..\src\images\cursor-forbidden.png;..\..\src\images\cursor-hand.png;..\..\src\images\cursor-uparrow.png;..\..\src\images\cursor-openhand.png;..\..\src\images\cursor-vsplit.png;..\..\src\images\cursor-sizev.png;..\..\src\images\cursor-hsplit.png;..\..\src\images\cursor-arrow.png;..\..\src\images\cursor-wait.png;..\..\src\images\cursor-whatsthis.png;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\src\qtpropertybrowser.qrc;..\..\src\images\cursor-sizeb.png;..\..\src\images\cursor-sizeall.png;..\..\src\images\cursor-ibeam.png;..\..\src\images\cursor-sizef.png;..\..\src\images\cursor-closedhand.png;..\..\src\images\cursor-busy.png;..\..\src\images\cursor-cross.png;..\..\src\images\cursor-sizeh.png;..\..\src\images\cursor-forbidden.png;..\..\src\images\cursor-hand.png;..\..\src\images\cursor-uparrow.png;..\..\src\images\cursor-openhand.png;..\..\src\images\cursor-vsplit.png;..\..\src\images\cursor-sizev.png;..\..\src\images\cursor-hsplit.png;..\..\src\images\cursor-arrow.png;..\..\src\images\cursor-wait.png;..\..\src\images\cursor-whatsthis.png;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\rcc.exe -name qtpropertybrowser ..\..\src\qtpropertybrowser.qrc -o release\qrc_qtpropertybrowser.cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\rcc.exe -name qtpropertybrowser ..\..\src\qtpropertybrowser.qrc -o release\qrc_qtpropertybrowser.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">RCC ..\..\src\qtpropertybrowser.qrc</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">RCC ..\..\src\qtpropertybrowser.qrc</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\qrc_qtpropertybrowser.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\qrc_qtpropertybrowser.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

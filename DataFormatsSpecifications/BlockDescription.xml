@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Block>
+    <!-- Описание блока -->
+
+    <Function>
+        <!-- Функция блока -->
+        <Name>Source</Name>
+        <!-- Имя функции -->
+        <Parameters>ParametersOf_U1.xml</Parameters>
+        <!-- Файл с параметрами/данными (если необходимо) -->
+    </Function>
+
+    <Ports>
+        <!-- Описание портов -->
+        <Count>1</Count>
+        <!-- Количество портов ввода/вывода -->
+        <Port>
+            <!-- Описание порта -->
+            <Name>img</Name>
+            <!-- Имя порта -->
+            <Type>float</Type>
+            <!-- Тип данных порта -->
+            <Flags>0</Flags>
+            <!-- Флаги -->
+            <Direction>out</Direction>
+            <!-- Направление работы порта -->
+        </Port>
+    </Ports>
+
+</Block>

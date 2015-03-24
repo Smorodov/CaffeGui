@@ -1,0 +1,68 @@
+<?xml version=1.0 encoding=UTF-8?>
+<Diagramm>
+    <!-- Корень диаграммы -->
+    <Blocks>
+        <!-- Описание блоков -->
+        <Count>1</Count>
+        <!-- Количество блоков в диаграмме -->
+        <Block>
+            <!-- Описание блока -->
+
+            <Name>U1</Name>
+            <!-- Имя блока -->
+            
+            <Function>
+                <!-- Функция блока -->
+                <Name>Source</Name>
+                <!-- Имя функции -->
+                <Parameters>ParametersOf_U1.xml</Parameters>
+                <!-- Файл с параметрами/данными (если необходимо) -->
+            </Function>
+
+            <Ports>
+                <!-- Описание портов -->
+                <Count>1</Count>
+                <!-- Количество портов ввода/вывода -->
+                <Port>
+                    <!-- Описание порта -->
+                    <Name>img</Name>
+                    <!-- Имя порта -->
+                    <Type>float</Type>
+                    <!-- Тип данных порта -->
+                    <Flags>0</Flags>
+                    <!-- Флаги -->
+                    <Direction>out</Direction>
+                    <!-- Направление работы порта -->
+                </Port>
+            </Ports>
+
+        </Block>
+    </Blocks>
+
+
+    <Connections>
+        <!-- Описание соединений -->
+        <Count>1</Count>
+        <!-- Количество соединений -->
+        <Connection>
+            <!-- Описание соединения -->
+            <Name>C1</Name>
+            <!-- Имя соединения -->
+            <Source>
+                <!-- Источник -->
+                <Block>U3</Block>
+                <!-- Имя блока источника -->
+                <Port>img</Port>
+                <!-- Имя порта блока источника -->
+            </Source>
+            <Destination>
+                <!-- Имя приемниека -->
+                <Block>U1</Block>
+                <!-- Имя блока приемника -->
+                <Port>div</Port>
+                <!-- Имя порта блока приемника -->
+            </Destination>
+        </Connection>
+    </Connections>
+
+</Diagramm>

@@ -1,0 +1,56 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "simple", "E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/simple\simple.vcxproj", "{30488794-ECCF-391D-BC04-77D2B8607411}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "canvas_variant", "E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_variant\canvas_variant.vcxproj", "{2F92AA2D-2CE0-3292-8F53-D7391BCB74AD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "canvas_typed", "E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/canvas_typed\canvas_typed.vcxproj", "{8E0F8003-4330-33F8-B63B-81D70D8F079A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "demo", "E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/demo\demo.vcxproj", "{78DCD218-045C-3E2C-BA6F-615A3090A918}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "decoration", "E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/decoration\decoration.vcxproj", "{487458D1-D35A-3B1F-A37F-BAFE4EE433F4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "extension", "E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/extension\extension.vcxproj", "{F04F8834-4A0C-3C6E-9139-8EF0CC14D131}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "object_controller", "E:/Documents/Visual Studio 2012/Projects/qnodeseditor/qt-solutions-dittel-qt-solutions/qtpropertybrowser/examples/object_controller\object_controller.vcxproj", "{1E52A990-9AEE-3511-A5BD-BECC35BDF2DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{30488794-ECCF-391D-BC04-77D2B8607411}.Debug|Win32.ActiveCfg = Debug|Win32
+		{30488794-ECCF-391D-BC04-77D2B8607411}.Debug|Win32.Build.0 = Debug|Win32
+		{30488794-ECCF-391D-BC04-77D2B8607411}.Release|Win32.ActiveCfg = Release|Win32
+		{30488794-ECCF-391D-BC04-77D2B8607411}.Release|Win32.Build.0 = Release|Win32
+		{2F92AA2D-2CE0-3292-8F53-D7391BCB74AD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2F92AA2D-2CE0-3292-8F53-D7391BCB74AD}.Debug|Win32.Build.0 = Debug|Win32
+		{2F92AA2D-2CE0-3292-8F53-D7391BCB74AD}.Release|Win32.ActiveCfg = Release|Win32
+		{2F92AA2D-2CE0-3292-8F53-D7391BCB74AD}.Release|Win32.Build.0 = Release|Win32
+		{8E0F8003-4330-33F8-B63B-81D70D8F079A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8E0F8003-4330-33F8-B63B-81D70D8F079A}.Debug|Win32.Build.0 = Debug|Win32
+		{8E0F8003-4330-33F8-B63B-81D70D8F079A}.Release|Win32.ActiveCfg = Release|Win32
+		{8E0F8003-4330-33F8-B63B-81D70D8F079A}.Release|Win32.Build.0 = Release|Win32
+		{78DCD218-045C-3E2C-BA6F-615A3090A918}.Debug|Win32.ActiveCfg = Debug|Win32
+		{78DCD218-045C-3E2C-BA6F-615A3090A918}.Debug|Win32.Build.0 = Debug|Win32
+		{78DCD218-045C-3E2C-BA6F-615A3090A918}.Release|Win32.ActiveCfg = Release|Win32
+		{78DCD218-045C-3E2C-BA6F-615A3090A918}.Release|Win32.Build.0 = Release|Win32
+		{487458D1-D35A-3B1F-A37F-BAFE4EE433F4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{487458D1-D35A-3B1F-A37F-BAFE4EE433F4}.Debug|Win32.Build.0 = Debug|Win32
+		{487458D1-D35A-3B1F-A37F-BAFE4EE433F4}.Release|Win32.ActiveCfg = Release|Win32
+		{487458D1-D35A-3B1F-A37F-BAFE4EE433F4}.Release|Win32.Build.0 = Release|Win32
+		{F04F8834-4A0C-3C6E-9139-8EF0CC14D131}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F04F8834-4A0C-3C6E-9139-8EF0CC14D131}.Debug|Win32.Build.0 = Debug|Win32
+		{F04F8834-4A0C-3C6E-9139-8EF0CC14D131}.Release|Win32.ActiveCfg = Release|Win32
+		{F04F8834-4A0C-3C6E-9139-8EF0CC14D131}.Release|Win32.Build.0 = Release|Win32
+		{1E52A990-9AEE-3511-A5BD-BECC35BDF2DD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1E52A990-9AEE-3511-A5BD-BECC35BDF2DD}.Debug|Win32.Build.0 = Debug|Win32
+		{1E52A990-9AEE-3511-A5BD-BECC35BDF2DD}.Release|Win32.ActiveCfg = Release|Win32
+		{1E52A990-9AEE-3511-A5BD-BECC35BDF2DD}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
